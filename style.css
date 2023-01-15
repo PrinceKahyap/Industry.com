@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+.wrapper{
+    width: 100%;
+}
+.wrapper .carousel{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+}
+.carousel .card{
+    background: red;
+    line-height: 250px;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+.carousel .card-1{
+    background-color: aqua;
+}
+.carousel .card-2{
+    background-color: rgb(153, 238, 147);
+}
+.carousel .card-3{
+    background-color: rgb(162, 177, 249);
+}
+.carousel .card-4{
+    background-color: rgb(241, 164, 235);
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 40px;
+}
+.owl-dot{
+    height: 15px;
+    width: 45px;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    margin: 0 5px;
+    border: 2px solid #0072bc !important;
+    transition: all 0.3s;
+}
+.owl-dot:hover{
+    background: #0072bc !important;
+}
