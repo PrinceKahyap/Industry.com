@@ -1,3 +1,4 @@
+
 // counterUp 
 const counters = document.querySelectorAll('.counter')
 counters.forEach(counter => {
@@ -29,11 +30,11 @@ $(".carousel").owlCarousel({
             nav: false
         },
         600: {
-            items: 2,
+            items: 1,
             nav: false
         },
         1000: {
-            items: 3,
+            items: 1,
             nav: false
         },
     }
@@ -49,23 +50,11 @@ function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
 };
+const navLink = document.querySelectorAll(".nav-link");
 
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
 
-var selectField = document.getElementById("selectField");
-var selectText = document.getElementById("selectText");
-var list = document.getElementById("list");
-var arrowIcon = document.getElementById("arrowIcon");
-var options = document.getElementsByClassName("options");
-
-selectField.onclick = function () {
-    list.classList.toggle('hide');
-    arrowIcon.classList.toggle('rotate');
-}
-
-for (option of options) {
-    option.onclick = function () {
-        selectText.innerHTML = this.textContent;
-        list.classList.toggle('hide');
-        arrowIcon.classList.toggle('rotate');
-    }
-};
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        };
