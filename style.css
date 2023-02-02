@@ -44,6 +44,7 @@ header {
     position: fixed;
     z-index: 100;
 }
+
 .head {
     position: fixed;
     background: #222222;
@@ -119,9 +120,10 @@ header {
 .nav-menu li i {
     font-size: 1.4rem;
     color: #222222;
-    transition:  0.5s ease;
+    transition: 0.5s ease;
 }
-.drop-menu{
+
+.drop-menu {
     position: absolute;
     width: 180px;
     top: 80px;
@@ -131,28 +133,46 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     visibility: hidden;
     opacity: 0;
-    transition:  0.8s ease;
+    transition: 0.4s ease-in;
     border-radius: 5px;
+    -webkit-transition: 0.4s ease-in;
+    -moz-transition: 0.4s ease-in;
+    -ms-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
 }
-.drop-menu li{
+
+.drop-menu li {
     margin-bottom: 12px;
     margin-left: 10px;
 }
-.nav-menu li:hover i{
+
+.nav-menu li:hover i {
     transform: rotate(180deg);
 }
-.drop-menu li a{
+
+.nav-menu input {
+    display: none;
+}
+
+.mobile-item {
+    display: none;
+}
+
+.drop-menu li a {
     font-size: 1.4rem;
     color: #222222;
 }
-.drop-menu li a:hover{
+
+.drop-menu li a:hover {
     color: #fab700;
 }
-.nav-menu li:hover .drop-menu{
+
+.nav-menu li:hover .drop-menu {
     top: 60px;
     opacity: 1;
     visibility: visible;
 }
+
 .hamburger {
     display: none;
 }
@@ -230,20 +250,23 @@ main {
 .hero-btn {
     width: 180px;
     height: 50px;
-    background-color: #fab700;;
+    background-color: #fab700;
+    ;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     transition: all 0.3 ease;
 }
+
 .btn {
     font-size: 1.6rem;
     color: #fff;
     font-weight: 500;
     text-transform: uppercase;
 }
-.hero-btn:hover{
+
+.hero-btn:hover {
     background-color: transparent;
     border: 1px solid #fff;
 }
@@ -254,7 +277,7 @@ main {
 .service {
     background-color: #ffffff;
     width: 100%;
-    padding-top: 120px;
+    padding-top: 100px;
     padding-bottom: 50px;
 }
 
@@ -306,12 +329,13 @@ main {
     width: 100%;
     height: auto;
     background: #f9f9ff;
-    padding: 120px 0px;
+    padding: 100px 0px;
 }
 
 .about-container {
     display: grid;
     grid-template-columns: 1.8fr 1fr;
+    column-gap: 20px;
     align-items: center;
 }
 
@@ -336,6 +360,8 @@ main {
 
 .about-container p {
     font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.8;
     color: #777777;
 }
 
@@ -347,7 +373,8 @@ main {
 .about-btn {
     width: 180px;
     height: 50px;
-    background-color: #fab700;;
+    background-color: #fab700;
+    ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -427,8 +454,8 @@ main {
 .market {
     width: 100%;
     height: auto;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .title {
@@ -462,15 +489,17 @@ main {
     width: 100%;
     overflow: hidden;
 }
-.market-img img{
+
+.market-img img {
     transition: 0.8s ease;
 }
 
 .marketBoxs:hover h3 {
     color: #fab700;
 }
+
 .marketBoxs:hover img {
-    transform:scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
 }
 
 .marketcontent h3 {
@@ -537,7 +566,7 @@ main {
 .project {
     width: 100%;
     height: auto;
-    padding-top: 120px;
+    padding-top: 50px;
     padding-bottom: 100px;
 }
 
@@ -566,33 +595,38 @@ main {
 /* ---------------  /Project-style ---------------  */
 
 /* ---------------  Feedback-style ---------------  */
-.feedback{
+.feedback {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 100px;
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/images/feedback-bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/feedback-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
-.feedback .title h2{
+
+.feedback .title h2 {
     color: #ffffff;
 }
-.feedback .title p{
+
+.feedback .title p {
     color: #ffffff;
     padding-bottom: 20px;
 }
-.feedback-container{
+
+.feedback-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.feedLeft{
+
+.feedLeft {
     width: 50%;
     background-color: #000;
     height: 350px;
     position: relative;
 }
-.feed-overlay{
+
+.feed-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -603,40 +637,49 @@ main {
     justify-content: center;
     align-items: center;
 }
-.feed-overlay img{
+
+.feed-overlay img {
     width: 50px;
     height: 50px;
 }
-.feedRight{
+
+.feedRight {
     width: 50%;
 }
-.wrapper{
+
+.wrapper {
     width: 100%;
 }
-.wrapper .carousel{
+
+.wrapper .carousel {
     max-width: 1200px;
     margin: auto;
     padding: 0 20px;
 }
-.feed-info{
+
+.feed-info {
     display: flex;
     gap: 20px;
 }
-.feed-info h3{
+
+.feed-info h3 {
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: 0.5px;
     color: #f9f9ff;
 }
-.feed-info ul{
+
+.feed-info ul {
     display: flex;
     gap: 5px;
 }
-.feed-info ul a{
+
+.feed-info ul a {
     color: #fab700;
     font-size: 1.4rem;
 }
-.card p{
+
+.card p {
     letter-spacing: 0.5px;
     padding-top: 10px;
     font-size: 1.6rem;
@@ -645,10 +688,12 @@ main {
     opacity: 0.9;
     font-weight: 400;
 }
-.owl-dots{
+
+.owl-dots {
     margin-top: 25px;
 }
-.owl-dot{
+
+.owl-dot {
     height: 10px;
     width: 10px;
     cursor: pointer;
@@ -658,18 +703,20 @@ main {
     color: #fab700 !important;
     background-color: #777777 !important;
 }
+
 .owl-dot:hover,
-.owl-dot.active{
+.owl-dot.active {
     background: #fab700 !important;
 }
+
 /* ---------------  /Feedback-style ---------------  */
 
 /* ---------------  Blog-style ---------------  */
 .blog {
     width: 100%;
     height: auto;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .blog-container {
@@ -827,7 +874,8 @@ footer {
     display: flex;
     gap: 30px;
 }
-.foot-icon-follow ul  a{
+
+.foot-icon-follow ul a {
     font-size: 1.4rem;
     color: #f9f9ff;
 }
@@ -866,59 +914,210 @@ footer {
 
 /* ---------------  /Footer-style ---------------  */
 
-/* .wrapper {
+/* ---------------  contact-style ---------------  */
+.contact{
     width: 100%;
-} */
-
-/* .wrapper .carousel {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 30px;
-} */
-
-/* .carousel .card {
-    background: red;
-    line-height: 250px;
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-    margin: 20px 0;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    height: auto;
+    padding-bottom: 100px;
+}
+.contact-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+}
+.contactLeft{
+    height: auto;
+}
+.contact-content{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    row-gap: 50px;
+    padding-top: 10px;
+}
+.contact-content span{
+    font-size: 2rem;
+    color: #fab700;
+}
+.contact-info p{
+    font-size: 1.6rem;
+    font-weight: 400;
+   color: #222222;
+}
+.contact-info p:nth-child(2){
+    font-size: 1.6rem;
+    color: #777777;
+    padding-top: 5px;
+}
+.contactRight{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.contactRight form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.contactRight form input,
+.contactRight form textarea{
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-}
-
-.carousel .card-1 {
-    background-color: aqua;
-}
-
-.carousel .card-2 {
-    background-color: rgb(153, 238, 147);
-}
-
-.carousel .card-3 {
-    background-color: rgb(162, 177, 249);
-}
-
-.carousel .card-4 {
-    background-color: rgb(241, 164, 235);
-}
-
-.owl-dots {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.owl-dot {
-    height: 15px;
-    width: 45px;
-    border-radius: 25px;
-    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    resize: none;
     outline: none;
-    margin: 0 5px;
-    border: 2px solid #0072bc !important;
-    transition: all 0.3s;
+}
+.contactRight form input::placeholder,
+.contactRight form textarea::placeholder{
+
+}
+.contact-btn{
+    width: 180px; 
+    margin-inline-start: auto;
+    position: relative;
+    height: 50px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #fab700;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    color: #ffffff;
+    border: none;
+}
+/* ---------------  /contact-style ---------------  */
+
+/* ---------------  hero-about-style ---------------  */
+.hero-about {
+    position: relative;
+    width: 100%;
+    background: url(/images/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 470px;
 }
 
-.owl-dot:hover {
-    background: #0072bc !important;
-} */
+.hero-about-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.hero-about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 50%;
+}
+
+.hero-about-link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-about-link a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.hero-about-link i {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.hero-about-content h2 {
+    color: #ffffff;
+    font-size: 5rem;
+}
+
+/* ---------------  .hero-about-style ---------------  */
+
+/* ---------------  About-Feedback-style ---------------  */
+.About-feedback {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background: #ffffff;
+}
+
+.feedback .title h2 {
+    color: #ffffff;
+}
+
+.feedback .title p {
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.about-feed-info {
+    display: flex;
+    gap: 20px;
+}
+
+.about-feed-info h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #000;
+}
+
+.about-feed-info ul {
+    display: flex;
+    gap: 5px;
+}
+
+.about-feed-info ul a {
+    color: #fab700;
+    font-size: 1.4rem;
+}
+
+.about-card p {
+    letter-spacing: 0.5px;
+    padding-top: 10px;
+    font-size: 1.6rem;
+    color: #222222;
+    line-height: 1.5;
+    opacity: 0.9;
+    font-weight: 400;
+}
+/* ---------------  /About-Feedback-style ---------------  */
+
+
+.two {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    padding: 100px 0px;
+}
+
+/* ---------------  About-service-style ---------------  */
+.about-service {
+    background-color: #f9f9ff;
+}
+/* ---------------  /About-service-style ---------------  */
+
+/* ---------------   Map-style ---------------  */
+.map{
+    position: relative;
+    padding: 100px 0;
+}
+.map-wrapper iframe {
+    width: 100%;
+    height: 500px;
+}
+/* ---------------   /Map-style ---------------  */

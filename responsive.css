@@ -19,8 +19,24 @@
         top: 60px;
     }
     .drop-menu{
-        display: none;
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        max-height: 0;
+        padding: 0;
+        overflow: hidden;
     }
+    #show-drop:checked ~ .drop-menu{
+        max-height: 100%;
+        margin-top: 20px;
+    }
+    .drop-menu{
+       transition: none;
+       -webkit-transition: none;
+       -moz-transition: none;
+       -ms-transition: none;
+       -o-transition: none;
+}
     .nav-menu{
         position: fixed;
         top: 130px;
@@ -41,6 +57,22 @@
         display: block;
         cursor: pointer;
     }
+    .desktop-item{
+        display: none;
+    }
+    .mobile-item{
+        font-size: 1.4rem;
+        color: #222222;
+        display: block;
+        cursor: pointer;
+    }
+    .nav-menu li:hover i{
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+}
     .hero-container p {
         width: 100%;
     }
@@ -79,6 +111,15 @@
     }
     .foot-items:nth-child(3){
         justify-self: start;
+    }
+    .hero-about-content h2 {
+        font-size: 4rem;
+    }
+    .contact-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .contactLeft {
+        padding: 10px;
     }
 }
 @media (max-width:568px) {
@@ -196,6 +237,12 @@
         font-size: 1.4rem;
     }
     .card p{
+        font-size: 1.4rem;
+    }
+    .hero-about-content h2 {
+        font-size: 3rem;
+    }
+    .hero-about-link a {
         font-size: 1.4rem;
     }
 }
