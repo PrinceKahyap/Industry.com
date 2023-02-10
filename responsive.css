@@ -47,6 +47,15 @@
     .nav-menu.active{
         left: 0;
     }
+    .hamburger.active .line:nth-child(1){
+        transform: translateY(9px) rotate(225deg);
+    }
+    .hamburger.active .line:nth-child(2){
+        background: transparent;
+    }
+    .hamburger.active .line:nth-child(3){
+        transform: translateY(-9px) rotate(-225deg);
+    }
     .nav-menu li{
         display: block;
        margin-left: 20px;
