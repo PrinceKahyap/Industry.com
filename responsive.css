@@ -172,6 +172,9 @@
         width: 100%;
         color: #222222;
     }
+    .aboutRight {
+        padding: 30px 20px;
+    }
     .aboutRight h3 {
         font-size: 1.4rem;
         letter-spacing: 0.5px;
