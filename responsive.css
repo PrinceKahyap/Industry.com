@@ -256,8 +256,28 @@
     }
 }
 @media (max-width:380px){
-    .aboutRight{
-        width: 95%;
+    .hero-container h3 {
+       text-align: center;
+    }
+    .aboutRight {
+        padding: 30px 10px;
+    }
+    .aboutRight h3 {
+        text-align: center;
+    }
+    #select {
+        width: 90%;
+        margin: auto;
+    }
+    .aboutForm form input,
+    .aboutForm form textarea {
+        width: 90%;
+        margin: auto;
+    }
+    .title {
         padding: 20px;
+    }
+    .title h2 {
+        font-size: 2.5rem;
     }
 } 
